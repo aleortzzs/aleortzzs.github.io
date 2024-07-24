@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Nyght';
+    src: url('../assets/fonts/TTF/NyghtSerif-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/fonts/TTF/Inter-Regular.ttf') format('truetype');
+}
+
+/* solo a los títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nyght', sans-serif;
+}
+
+/* text */
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+}
+
+.custom-list{
+    color: #ffffff; 
+    font-family: 'Inter', sans-serif;
+    font-size: larger;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.no-mb {
+    margin-bottom: 0;
+}
+
+.no-mt {
+    margin-top: 0;
+}
+
+.vertical-center {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+/* bg colors*/
+.sb-bg{
+    background-color: #f1b801;
+}
+
+.wv-bg{
+    background-color: #d7142b;
+}
+
+.wiz-bg{
+    background-color: #9412e5;
+}
+
+.com-bg{
+    background-color: #f04a00;
+}
+
+.about-bg{
+    background-color: #2B1D13;
+    color: #FFF8E7;
+    height: 50%;
+    border-radius: 0.8rem;
+}
+
+html{
+    background-color: #FFF8E7;
+}
+
+.full-width {
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.titulo{
+    color: #2B1D13 !important;
+    position: relative;
+    text-align: center; 
+}
+
+.nav-link:link,
+.nav-link:visited,
+.nav-link:hover,
+.nav-link:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.sb-bg h3, .sb-bg p,
+.wiz-bg h3, .wiz-bg p,
+.wv-bg h3, .wv-bg p,
+.com-bg h3, .com-bg p {
+    color: #FFF8E7; 
+}
+
+/* ajustar y centrar carrusel */
+.carousel {
+    display: flex;
+    justify-content: center; 
+}
+
+.carousel .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel .carousel-item {
+    max-width: 95%;
+    margin: auto; 
+}
+
+/*ajustes carrusel mobile*/
+.carousel-full-height .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.carousel-full-height .carousel-item img {
+    width: auto;
+    height: 90%; 
+}
+
+.carousel-full-height .carousel-item {
+    max-width: 60%; 
+    margin: auto; 
+}
+
+@media (max-width: 600px) {
+    .titulo h4::before, .titulo h4::after {
+        width: calc(50% - 30px);
+    }
+    .about-bg {
+        padding: 10px;
+    }
+    .carousel .carousel-item {
+        max-width: 90%;
+    }
+}
